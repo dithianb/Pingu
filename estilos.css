@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 3% 1fr 1fr 1fr 1fr 3%;
+    grid-template-rows: auto 700px auto 400px auto auto auto auto auto auto 100px;
+    grid-template-areas: 
+    "... menu menu menu menu ..."
+    "... banner banner banner banner ..."
+    "... texto texto imagen imagen ..."
+    "... video video texti texti ..."
+    "... ... texte texte ... ..."
+    "... carrusel carrusel carrusel carrusel ..."
+    "... taxto taxto animacion animacion ..."
+    "... cards cards cards cards ..."
+    "... taxti taxti taxti taxti ..."
+    "... mapa mapa form form ..."
+    "... pie pie pie pie ...";
+}
+.navbar{
+    width: 94%;
+    margin-left: 3%;
+}
+.elem1{
+    grid-area: menu;
+    margin-bottom: 70px;
+}
+.elem2{
+    grid-area: banner;
+    background-image: url(images/pingu.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: antiquewhite;
+    text-align: center;
+    padding: 17%;
+    text-shadow: 1px 1px 2px black;
+}
+.btn-secondary{
+    box-shadow: 1px 1px 2px black;
+}
+.elem3{
+    grid-area: texto;
+    background-color: rgb(65, 65, 65, 0.9);
+    padding: 4%;
+    line-height: 150%;
+    color: white;
+    text-align: justify;
+    align-self: center;
+    margin: 5px 2%;
+    border-radius: 1%;
+    box-shadow: 1px 1px 2px black;
+}
+.elem4{
+    grid-area: pie;
+    background-color: rgb(39, 39, 39);
+    color: antiquewhite;
+    display: flex;
+    padding: 1%;
+}
+.elem4>p{
+    flex-grow: 2;
+}
+.elem5{
+    grid-area: imagen;
+    border-radius: 2%;
+    align-self: center;
+    margin: 1% 2% 0 2%;
+    box-shadow: 1px 1px 2px black;
+}
+.elem5>img{
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+    padding: 2%;
+    box-shadow: 1px 1px 2px black;
+}
+.elem6{
+    grid-area: video;
+    background-color: rgb(65, 65, 65);
+    padding: 3% 0px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.elem7{
+    grid-area: texti;
+    background-color: rgb(65, 65, 65, 0.9);
+    padding: 5%;
+    line-height: 150%;
+    color: white;
+    text-align: justify;
+    align-self: center;
+    margin: 5px 2%;
+    border-radius: 1%;
+    box-shadow: 1px 1px 2px black;
+}
+.elem8{
+    grid-area: texte;
+    padding: 4%;
+    line-height: 150%;
+    color: white;
+    text-align: justify;
+    align-self: center;
+    margin: 5px 2%;
+    border-radius: 1%;
+    box-shadow: 1px 1px 2px black;
+}
+.elem9{
+    grid-area: carrusel;
+    background-color: aquamarine;
+}
+.elem10{
+    grid-area: taxto;
+    background-color: rgb(65, 65, 65, 0.9);
+    padding: 4%;
+    line-height: 150%;
+    color: white;
+    text-align: justify;
+    align-self: center;
+    margin: 5px 2%;
+    border-radius: 1%;
+    box-shadow: 1px 1px 2px black;
+}
+.elem11{
+    grid-area: animacion;
+}
+.elem12{
+    grid-area: cards;
+    display: flex;
+    margin: 1%;
+}
+.elem12>.card{
+    margin: 1%;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+.elem12>.card:hover{
+    opacity: 1;
+    filter: contrast(120%);
+    scale: 1.2;
+}
+.elem13{
+    grid-area: taxti;
+    background-color: rgb(65, 65, 65, 0.9);
+    padding: 4%;
+    line-height: 150%;
+    color: white;
+    text-align: justify;
+    align-self: center;
+    margin: 5px 2%;
+    border-radius: 1%;
+    box-shadow: 1px 1px 2px black;
+}
+.elem14{
+    grid-area: mapa;
+}
+.elem15{
+    grid-area: form;
+    background-color: rgb(65, 65, 65, 0.9);
+    color: antiquewhite;
+    margin: 3%;
+    padding: 3%;
+}
+.elem15>h2{
+    text-align: center;
+    color: antiquewhite;
+}
+.form{
+    width: 100%;
+}
+input, textarea, select{
+    margin: 10px 0 0 0;
+    width: 100%;
+    display: inline;
+}
+label{
+    width: 100%;
+    display: inline;
+}
+.inline{
+    width: unset;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+    display: inline;
+}
+.redes{
+    margin-right: 1%;
+}
+.redes>:hover{
+    filter: blur(3px);
+}
+.navbar-brand>img{
+    border-radius: 50%;
+}
+ul>li{
+    margin-left: 10%;
+}
+h3{
+    text-align: center;
+    color: antiquewhite;
+
+}
+.btn-warning{
+    display: block;
+    width: 40%;
+    margin: 16px auto;
+    background-color: orange;
+    border-color: rgb(0, 0, 0);
+}
+.btn-warning:hover{
+    filter: invert(100%);
+}
+.otro>img{
+    width: 30%;
+    height: auto;
+    animation: pingu 2.5s infinite;
+}
+.otro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.sombri{
+    margin-top: 0px;
+    width: 40%;
+    height: 60px;
+    background-color: rgba(145, 145, 145, 0.7);
+    filter: blur(16px);
+    border-radius: 50%;
+}
+@keyframes pingu{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+}
+nav{
+    width: 94%;
+    margin-left: 3%;
+}
+@media(max-width:768px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1% 1fr 1fr 1%;
+        grid-template-rows: 50px 400px auto auto auto auto auto auto auto auto auto auto auto auto 300px auto;
+        grid-template-areas: 
+        "... menu menu ..."
+        "... banner banner ..."
+        "... texto texto ..."
+        "... imagen imagen ..."
+        "... video video ..."
+        "... texti texti ..."
+        "... texte texte ..."
+        "... carrusel carrusel ..."
+        "... taxto taxto ..."
+        "... animacion animacion ..."
+        "... cards cards ..."
+        "... cards cards ..."
+        "... taxti taxti ..."
+        "... form form ..."
+        "... mapa mapa ..."
+        "... pie pie ...";
+    }
+    .elem12{
+        flex-wrap: wrap;
+    }
+    .elem12>.card{
+        width: 50%;
+        margin: 1%;
+    }
+    nav{
+        width: 98%;
+        margin-left: 1%;
+    }
+}
